@@ -1,0 +1,23 @@
+<h1>Listing story_containers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @story_containers.each do |story_container| %>
+      <tr>
+        <td><%= link_to 'Show', story_container %></td>
+        <td><%= link_to 'Edit', edit_story_container_path(story_container) %></td>
+        <td><%= link_to 'Destroy', story_container, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Story container', new_story_container_path %>

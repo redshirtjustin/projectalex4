@@ -2,7 +2,7 @@ module Api
   class BaseController < ApplicationController
     protect_from_forgery with: :null_session
     before_action :set_resource, only: [:destroy, :show, :update]
-    respond_to :json
+    respond_to :json, :html, :xml
 
 # POST /api/{plural_resource_name}
 def create
@@ -25,16 +25,16 @@ end
 def index
   plural_resource_name = "@#{resource_name.pluralize}"
   resources = resource_class.where(query_params)
-                            .page(page_params[:page])
-                            .per(page_params[:page_size])
+  .page(page_params[:page])
+  .per(page_params[:page_size])
 
   instance_variable_set(plural_resource_name, resources)
-  respond_with instance_variable_get(plural_resource_name)
+  respond_with(instance_variable_get(plural_resource_name))
 end
 
 # GET /api/{plural_resource_name}/1
 def show
-  respond_with get_resource
+  respond_with(get_resource)
 end
 
 # PATCH/PUT /api/{plural_resource_name}/1
@@ -46,7 +46,7 @@ def update
   end
 end
 
-    private
+private
 
       # Returns the resource from the created instance variable
       # @return [Object]
@@ -94,5 +94,5 @@ end
         resource ||= resource_class.find(params[:id])
         instance_variable_set("@#{resource_name}", resource)
       end
+    end
   end
-end

@@ -41,5 +41,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # To create foreign keys in the database, used with migration files (not included in standard gems)
 gem 'foreigner'
 
-gem 'jbuilder' # used for serialization of models into JSON
 gem 'kaminari' # adds pagination to ActiveModels

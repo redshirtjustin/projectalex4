@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :story_containers
+
   root 'story_containers#index'
 
   get 'story_containers/index'
 
-  namespace :api do
+  namespace :api, defaults: {format: :json} do
     resources :story_containers, :sections, :priorities, :pipelines
   end
 

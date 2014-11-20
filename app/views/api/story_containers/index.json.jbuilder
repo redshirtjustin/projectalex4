@@ -1,4 +1,4 @@
-json.StoryContainers @StoryContainers do |StoryContainer|
+﻿json.StoryContainers @StoryContainers do |StoryContainer|
   json.id    			StoryContainer.id
   json.head_line 		StoryContainer.head_line
   json.lead_line 		StoryContainer.lead_line
