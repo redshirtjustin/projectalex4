@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  root 'story_containers#index'
+
+  get 'story_containers/index'
+
+  namespace :api do
+    resources :story_containers, :sections, :priorities, :pipelines
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

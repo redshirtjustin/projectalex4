@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8513c201-8070-418e-a060-e3134a0b1ad3" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Justin\Desktop\work\projectalex4\Project-Alex-iteration-4" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projectalex4.iml" afterPath="$PROJECT_DIR$/.idea/projectalex4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="projectalex4.iws" />
     <ignored path=".idea/workspace.xml" />
