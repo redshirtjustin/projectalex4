@@ -29,7 +29,7 @@ def index
   .per(page_params[:page_size])
 
   instance_variable_set(plural_resource_name, resources)
-  respond_with(instance_variable_get(plural_resource_name))
+  respond_with instance_variable_get(plural_resource_name)
 end
 
 # GET /api/{plural_resource_name}/1
